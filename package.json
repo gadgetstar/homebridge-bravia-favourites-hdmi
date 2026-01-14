@@ -17,13 +17,13 @@
   ],
   "author": "gadgetstar",
   "license": "MIT",
-  "homepage": "https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI",
+  "homepage": "https://github.com/gadgetstar/homebridge-bravia-favourites-hdmi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI.git"
+    "url": "git+https://github.com/gadgetstar/homebridge-bravia-favourites-hdmi.git"
   },
   "bugs": {
-    "url": "https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI/issues"
+    "url": "https://github.com/gadgetstar/homebridge-bravia-favourites-hdmi/issues"
   },
   "engines": {
     "homebridge": ">=1.6.0",
