@@ -76,8 +76,16 @@
           "type": "object",
           "required": ["name", "ip"],
           "properties": {
-            "name": { "type": "string", "title": "Name", "minLength": 1 },
-            "ip": { "type": "string", "title": "IP address", "minLength": 1 },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "minLength": 1
+            },
+            "ip": {
+              "type": "string",
+              "title": "IP address",
+              "minLength": 1
+            },
             "port": {
               "type": "integer",
               "title": "Port",
@@ -91,19 +99,30 @@
               "default": "tv:dvbt",
               "description": "UK Freeview is typically tv:dvbt"
             },
+
             "hdmiInputs": {
-  "type": "array",
-  "title": "HDMI Inputs",
-  "items": {
-    "type": "object",
-    "properties": {
-      "name": { "type": "string", "title": "Name" },
-      "port": { "type": "integer", "title": "HDMI Port", "minimum": 1, "maximum": 99 }
-    },
-    "required": ["name", "port"]
-  },
-  "default": []
-}
+              "type": "array",
+              "title": "HDMI Inputs",
+              "description": "Optional HDMI inputs to expose in HomeKit",
+              "default": [],
+              "items": {
+                "type": "object",
+                "required": ["name", "port"],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "title": "Input name",
+                    "minLength": 1
+                  },
+                  "port": {
+                    "type": "integer",
+                    "title": "HDMI port number",
+                    "minimum": 1,
+                    "maximum": 99
+                  }
+                }
+              }
+            }
           }
         }
       }
