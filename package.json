@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-bravia-favourites-hdmi",
+  "version": "1.0.1",
+  "displayName": "Sony Bravia Favourites HDMI",
+  "description": "Homebridge platform plugin to expose Sony Bravia TVs with a HomeKit channel selector based on a favourites file with HDMI",
+  "main": "index.js",
+  "platforms": [
+    "BraviaFavourites"
+  ],
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "sony",
+    "bravia",
+    "tv",
+    "freeview"
+  ],
+  "author": "gadgetstar",
+  "license": "MIT",
+  "homepage": "https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gadgetstar/homebridge-bravia-favourites-HDMI/issues"
+  },
+  "engines": {
+    "homebridge": ">=1.6.0",
+    "node": ">=18.0.0"
+  }
+}
